@@ -3,9 +3,11 @@ export default function NavBar () {
 
     const menuDesktop = document.querySelector('.header');
 
-    let listaMenu = ['Background'];
+    let listaMenu = ['Background', 'Counter'];
     let nav = document.createElement('nav');
     let ul = document.createElement('ul');
+
+    ul.className = 'ulMenu'
 
 
     listaMenu.map(element => {

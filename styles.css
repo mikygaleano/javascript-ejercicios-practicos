@@ -9,13 +9,20 @@ body {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     margin: auto;
 }
 
 .itemMenu {
     list-style: none;
+}
+
+.ulMenu {
+    display: flex;
+    gap: 1rem;
+    margin-right: 2rem;
+    cursor: pointer;
 }
 
 .section-background {
@@ -37,3 +44,45 @@ body {
     color: white;
 }
 
+
+
+
+.section-counter {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(226, 225, 225);
+}
+
+.section-counter h3{
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.section-counter div{
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.btn-counter {
+    padding: .5rem;
+    border-radius: 5px;
+    border: solid 1px black;
+    background-color: aqua;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+}
+
+.span-counter {
+    color: green;
+    font-size: 5rem;
+    font-weight: bolder;
+}
