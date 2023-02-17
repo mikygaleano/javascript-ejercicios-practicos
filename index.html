@@ -10,11 +10,11 @@
 <body>
     <header class="header"></header>
 
-    <section class="section-background">
+    <section class="section-background" id="background">
         <button class="btn-background">Background</button>
     </section>
 
-    <section class="section-counter">
+    <section class="section-counter" id="counter">
         <h3>COUNTER</h3>
         <span class="span-counter">
             
@@ -25,6 +25,49 @@
             <button class="btn-counter btn-adelante">Adelande</button>
         </div> 
     </section>
+
+    <section class="slider">
+        <div class="slider-conteiner conteiner">
+            <button class="slider-arroy" id="before"><</button>
+
+            <section class="slider-body slider-body-show" data-id="1">
+                <div class="slider-texts">
+                    <h2 class="subtitele">
+                        Hola mi nombre es Michael Galeano!!
+                    </h2>
+                    <p class="slider-review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Culpa sit esse tempore et ut expedita voluptatibus magni
+                         quasi?
+                    </p>
+                </div>
+                <figure class="slider-picture">
+                    <img class="slider-img" src="/image/maiki.jpg" alt="imagen">
+                </figure>
+            </section>
+
+            <section class="slider-body" data-id="2">
+                <div class="slider-texts">
+                    <h2 class="subtitele">
+                        Hola mi nombre es thiago Galeano!!
+                    </h2>
+                    <p class="slider-reviw">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Culpa sit esse tempore et ut expedita voluptatibus magni
+                         quasi?
+                    </p>
+                </div>
+                <figure class="slider-picture">
+                    <img class="slider-img" src="/image/thiago.jpg" alt="imagen">
+                </figure>
+            </section>
+
+            <button class="slider-arroy" id="next">></button>
+        </div>
+        
+    </section>
+
+    
 
     <script src="./main.js" type="module"></script>
 </body>

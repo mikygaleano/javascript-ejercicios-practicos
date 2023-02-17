@@ -3,6 +3,8 @@ body {
     padding: 0;
 }
 
+/* header navbar */
+
 .header {
     width: 100%;
     height: fit-content;
@@ -12,10 +14,16 @@ body {
     justify-content: right;
     align-items: center;
     margin: auto;
+    position: fixed;
 }
 
 .itemMenu {
     list-style: none;
+}
+
+.itemMenu > a {
+    text-decoration: none;
+    color: white;
 }
 
 .ulMenu {
@@ -25,6 +33,9 @@ body {
     cursor: pointer;
 }
 
+
+
+/* background */
 .section-background {
     background-color: blue;
     width: 100%;
@@ -45,7 +56,7 @@ body {
 }
 
 
-
+/* counter */
 
 .section-counter {
     width: 100%;
@@ -82,9 +93,134 @@ body {
     width: 100px;
     text-align: center;
 }
+.btn-counter:hover{
+    border: solid 2px blueviolet;
+}
 
 .span-counter {
     color: green;
     font-size: 5rem;
     font-weight: bolder;
+}
+
+/* carrusel */
+
+.section-carrusel {
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: auto;
+}
+
+.conteiner-carrusel {
+    display: inline;
+    object-fit: contain;
+}
+
+.card-carrusel {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    padding: .5rem;
+    position: relative;
+    left: -1.5rem;
+    top: -.5rem;
+}
+
+.conteiner-card {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background-color: rgb(23, 148, 238);
+    padding: .5rem;
+}
+
+.contenedor {
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.anterior, .siguiente {
+    cursor: pointer;
+}
+
+/* slider */
+
+.container {
+    width: 90%;
+    min-width: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    background-color:  white;
+    padding: 40px 0;
+}
+
+.slider-conteiner {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+}
+
+.slider-body {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.slider-body-show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider-text {
+    max-width: 600px;
+}
+
+.subtitule {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.slider-review {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.slider-img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.siler-arrow {
+    cursor: pointer;
+    width: 90%;
+}
+
+.siler-arrow:nth-child(2) {
+    justify-self: end;
 }
