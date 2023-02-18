@@ -11,9 +11,10 @@ export default function NavBar () {
         {
             pestaña: 'Counter',
             href: '#counter'
-        }, {
-            pestaña: 'Carrusel',
-            href: '#carrusel'
+        },
+        {
+            pestaña: 'Slider',
+            href: '#slider'
         }
     ];
     let nav = document.createElement('nav');
